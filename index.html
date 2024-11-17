@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="Découvrez notre collection exclusive de sneakers pour des moments uniques. Fé Store vous propose une large gamme incontournable de modèles tendance.">
+    <meta name="keywords" content="festore, fesneakers, shoes, baskets, drip, fesneakersbenin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="fé Store">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="fé Store - Moments Extrêmes avec nos Sneakers">
+    <meta property="og:description" content="Découvrez une collection de sneakers authentiques pour des moments uniques. Explorez la gamme complète sur le fé Store.">
+    <meta property="og:image" content="https://i.postimg.cc/gjpp2nKv/pexels-shyam-mishra-203327-13691725.jpg">
+    <meta property="og:url" content="https://fesneakers.store">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="fé Store - Moments Extrêmes avec nos Sneakers">
+    <meta name="twitter:description" content="Nos sneakers vous offrent des moments inoubliables. Découvrez la collection sur fé Store.">
+    <meta name="twitter:image" content="https://i.postimg.cc/xCJ8zJHh/pexels-kush-agrawal-1061861-13919027.jpg">
+
+    <title>fé Sneakers - The fairy choice</title>
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        /* Ajout d'un style de scroll */
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Permet de commencer l'affichage en haut de la page */
+            background: #0A0A0F;
+            overflow-y: auto; /* Active le défilement vertical */
+            font-family: Arial, sans-serif;
+        }
+
+        .main-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-width: 600px;
+            background-color: #1C1C1E;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            color: white;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(-100%);
+            pointer-events: none;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .text-overlay {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        input[type="radio"], textarea {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            border: none;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #5A9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #48C;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-content" id="loader-content">
+        <img src="first.jpg" alt="Bienvenue sur le fé Store - Sneakers" loading="lazy">
+        <div class="text-overlay">Répondez à ces questions pendant que votre page charge :</div>
+
+        <!-- Titre de la section -->
+        <h1>Tentez de gagner une paire Gratuite !</h1>
+
+        <!-- Question: Avez-vous déjà obtenu votre paire gratuite ? -->
+        <label>Avez-vous déjà obtenu votre paire gratuite ?</label>
+        <label>
+            <input type="radio" name="free-pair" value="oui"> Oui
+        </label>
+        <label>
+            <input type="radio" name="free-pair" value="non"> Non
+        </label>
+
+        <!-- Question: Avez-vous déjà participé à notre programme de cadeaux gratuits ? -->
+        <label>Avez-vous déjà participé à notre programme de cadeaux gratuits ?</label>
+        <label>
+            <input type="radio" name="program" value="oui"> Oui
+        </label>
+        <label>
+            <input type="radio" name="program" value="non"> Non
+        </label>
+
+        <!-- Question supplémentaire: Devinette sur l'histoire des sneakers -->
+        <label>Quel est le nom de la première paire de sneakers créée par Nike ?</label>
+        <label>
+            <input type="radio" name="nike-sneaker" value="Air Jordan"> Air Jordan
+        </label>
+        <label>
+            <input type="radio" name="nike-sneaker" value="Air Max"> Air Max
+        </label>
+        <label>
+            <input type="radio" name="nike-sneaker" value="Nike Blazer"> Nike Blazer
+        </label>
+
+        <!-- Champ de texte : Feedback supplémentaire -->
+        <label>Si vous avez des commentaires ou suggestions, écrivez-les ici :</label>
+        <textarea placeholder="Vos commentaires ou suggestions..."></textarea>
+
+        <!-- Bouton de soumission -->
+        <button type="submit">Soumettre</button>
+    </div>
+
+    <!-- Load Flutter -->
+    <script src="flutter_bootstrap.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loaderContent = document.getElementById('loader-content');
+
+            // Detect Flutter's first frame
+            window.addEventListener('flutter-first-frame', function() {
+                loaderContent.classList.add('hidden'); // Apply the "hidden" class to fade out
+            });
+        });
+    </script>
+</body>
+</html>
