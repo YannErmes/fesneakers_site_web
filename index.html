@@ -104,7 +104,7 @@
             width: 100%;
             margin-top: 20px;
             padding: 10px;
-            background-color: #5A9;
+            background-color: #80ff80;
             color: white;
             border: none;
             border-radius: 5px;
@@ -122,47 +122,45 @@
 <body>
     <div class="main-content" id="loader-content">
         <img src="first.jpg" alt="Bienvenue sur le fé Store - Sneakers" loading="lazy">
-        <div class="text-overlay">Répondez à ces questions pendant que votre page charge :</div>
 
-        <!-- Titre de la section -->
-        <h1>Tentez de gagner une paire Gratuite !</h1>
+        <div class="text-overlay"> Il a été prouver que : Un style vestimentaire est la manière de s'habiller pour exprimer son identité</div>
 
         <!-- Question: Avez-vous déjà obtenu votre paire gratuite ? -->
-        <label>Avez-vous déjà obtenu votre paire gratuite ?</label>
+
         <label>
-            <input type="radio" name="free-pair" value="oui"> Oui
-        </label>
-        <label>
-            <input type="radio" name="free-pair" value="non"> Non
+            <input type="checkbox" required> je ne suis pas un robot.
         </label>
 
+
         <!-- Question: Avez-vous déjà participé à notre programme de cadeaux gratuits ? -->
-        <label>Avez-vous déjà participé à notre programme de cadeaux gratuits ?</label>
+        <h3>Voulez-vous reçevoire les asseccoires gratuit offert ?</h3>
         <label>
-            <input type="radio" name="program" value="oui"> Oui
+            <input type="radio" name="program" value="oui"> Non ,juste ma paire.
         </label>
         <label>
-            <input type="radio" name="program" value="non"> Non
+            <input type="radio" name="program" value="non"> Oui ,cela ne me dérrange pas.
         </label>
 
         <!-- Question supplémentaire: Devinette sur l'histoire des sneakers -->
-        <label>Quel est le nom de la première paire de sneakers créée par Nike ?</label>
+        <h3>Vous êtes :</h3>
         <label>
-            <input type="radio" name="nike-sneaker" value="Air Jordan"> Air Jordan
+            <input type="radio" name="nike-sneaker" value="Air Jordan"> Homme
         </label>
         <label>
-            <input type="radio" name="nike-sneaker" value="Air Max"> Air Max
-        </label>
-        <label>
-            <input type="radio" name="nike-sneaker" value="Nike Blazer"> Nike Blazer
+            <input type="radio" name="nike-sneaker" value="Air Max"> femme
         </label>
 
-        <!-- Champ de texte : Feedback supplémentaire -->
-        <label>Si vous avez des commentaires ou suggestions, écrivez-les ici :</label>
-        <textarea placeholder="Vos commentaires ou suggestions..."></textarea>
+        <label>Es-ce Votre première paire de Sneakers ?</label>
+        <label>
+            <input type="radio" name="nike-sneaker" value="Air Jordan"> Non ,je suis un(e) habitué(e).
+        </label>
+        <label>
+            <input type="radio" name="nike-sneaker" value="Air Max"> Oui ,je veux essayé se style.
+        </label>
+
 
         <!-- Bouton de soumission -->
-        <button type="submit">Soumettre</button>
+        <button type="submit">Fini , voire les paire</button>
     </div>
 
     <!-- Load Flutter -->
