@@ -2,66 +2,63 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta name="description" content="Découvrez notre collection exclusive de sneakers pour des moments uniques. Fé Store vous propose une large gamme incontournable de modèles tendance.">
-    <meta name="keywords" content="festore, fesneakers, shoes, baskets, drip, fesneakersbenin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre optimisé pour SEO -->
+    <title>féSneakers - Sneakers modernes et accessoires exclusifs</title>
+
+    <!-- Métadonnées pour le SEO -->
+    <meta name="description" content="Découvrez notre collection exclusive de sneakers et bénéficiez d'offres spéciales sur fé Store. Explorez nos modèles tendance et recevez des accessoires uniques.">
+    <meta name="keywords" content="sneakers, baskets, accessoires, fésneakers, fé Store, chaussures tendance, drip, BeninSneakers , Noel , yann ">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="fé Store">
+    <meta name="author" content="féSneakers">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="icon" href="favicon.png" type="image/png">
 
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="fé Store - Moments Extrêmes avec nos Sneakers">
-    <meta property="og:description" content="Découvrez une collection de sneakers authentiques pour des moments uniques. Explorez la gamme complète sur le fé Store.">
+    <!-- Métadonnées Open Graph (partage social) -->
+    <meta property="og:title" content="féSneakers - Sneakers et accessoires tendance">
+    <meta property="og:description" content="Une collection de sneakers modernes pour sublimer votre style. Profitez d'offres spéciales et d'accessoires uniques sur fé Store.">
     <meta property="og:image" content="https://i.postimg.cc/gjpp2nKv/pexels-shyam-mishra-203327-13691725.jpg">
     <meta property="og:url" content="https://fesneakers.store">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="fé Store - Moments Extrêmes avec nos Sneakers">
-    <meta name="twitter:description" content="Nos sneakers vous offrent des moments inoubliables. Découvrez la collection sur fé Store.">
+    <meta name="twitter:title" content="fé Store - Sneakers modernes et accessoires exclusifs">
+    <meta name="twitter:description" content="Profitez de nos offres exclusives pour découvrir la gamme fé Store, la référence des sneakers tendances.">
     <meta name="twitter:image" content="https://i.postimg.cc/xCJ8zJHh/pexels-kush-agrawal-1061861-13919027.jpg">
 
-    <title>fé Sneakers - The fairy choice</title>
+    <!-- Préchargement des ressources pour améliorer les performances -->
+    <link rel="preload" href="flutter_bootstrap.js" as="script">
+
+    <!-- Manifeste pour PWA -->
     <link rel="manifest" href="manifest.json">
 
+    <!-- Styles personnalisés -->
     <style>
-        /* Ajout d'un style de scroll */
         body {
             margin: 0;
-            height: 100%;
-            width: 100%;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0A0A0F;
+            color: white;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Permet de commencer l'affichage en haut de la page */
-            background: #0A0A0F;
-            overflow-y: auto; /* Active le défilement vertical */
-            font-family: Arial, sans-serif;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow-y: auto;
         }
 
         .main-content {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background-color: #1C1C1E;
             width: 90%;
             max-width: 600px;
-            background-color: #1C1C1E;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-            color: white;
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .hidden {
-            opacity: 0;
-            transform: translateY(-100%);
-            pointer-events: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
 
         .main-content img {
@@ -71,103 +68,83 @@
         }
 
         .text-overlay {
-            font-size: 18px;
-            text-align: center;
-            margin-bottom: 20px;
+            font-size: 16px;
+            margin: 15px 0;
         }
 
         label {
             display: block;
-            font-size: 16px;
-            margin-top: 15px;
-        }
-
-        input[type="radio"], textarea {
-            margin-top: 10px;
-            padding: 10px;
             font-size: 14px;
+            margin-top: 10px;
         }
 
-        input[type="radio"] {
+        input[type="radio"], input[type="checkbox"] {
             margin-right: 10px;
-        }
-
-        textarea {
-            width: 100%;
-            height: 80px;
-            border: none;
-            border-radius: 5px;
-            resize: none;
         }
 
         button {
             width: 100%;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #80ff80;
+            padding: 12px;
+            background-color: #48C;
             color: white;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            margin-top: 20px;
         }
 
         button:hover {
-            background-color: #48C;
+            background-color: #36A;
         }
-
     </style>
 </head>
 <body>
     <div class="main-content" id="loader-content">
-        <img src="https://i.postimg.cc/8C1ZQKhw/Nike-Crocs.png" alt="Bienvenue sur le fé Store - Sneakers" loading="lazy">
+        <!-- Image principale -->
+        <img src="https://i.postimg.cc/8C1ZQKhw/Nike-Crocs.png" alt="fé Store - Sneakers modernes et accessoires exclusifs" loading="lazy">
 
-        <div class="text-overlay"> Offre spéciale : pour l'achat de votre première paire de baskets, nous vous offrons une montre. Mais attention, les stocks sont limités !  </div>
+        <!-- Texte principal -->
+        <div class="text-overlay">Offre spéciale : Pour l'achat de votre première paire de baskets, recevez une montre exclusive. Stocks limités !</div>
 
-
+        <!-- Validation "Non robot" -->
         <h3>
-            <input type="checkbox" required> je ne suis pas un robot.
+            <input type="checkbox" required> Je confirme que je ne suis pas un robot.
         </h3>
 
+        <!-- Texte sur le style vestimentaire -->
+        <div class="text-overlay">Votre style vestimentaire raconte votre parcours et exprime votre identité unique.</div>
 
-        <div class="text-overlay"> Selon des etudes : Votre style vestimentaire est bien plus qu'une simple apparence : il raconte votre parcoure et exprime votre identité unique.</div>
-
-        <!-- Question: Avez-vous déjà obtenu votre paire gratuite ? -->
-
-
-        <!-- Quetion: Avez-vous déjà participé à notre programme de cadeaux gratuits ? -->
-        <h3>Voulez-vous reçevoire les asseccoires gratuit offerts ?</h3>
+        <!-- Questions -->
+        <h3>Souhaitez-vous recevoir les accessoires gratuits offerts ?</h3>
         <label>
-            <input type="radio" name="program" value="oui"> Non ,juste ma paire.
+            <input type="radio" name="program" value="non"> Non, juste ma paire.
         </label>
         <label>
-            <input type="radio" name="program" value="non"> Oui ,cela ne me dérrange pas.
+            <input type="radio" name="program" value="oui"> Oui, cela ne me dérange pas.
         </label>
 
-        <!-- Question supplémentaire: Devinette sur l'histoire des sneakers -->
         <h3>Vous êtes :</h3>
         <label>
-            <input type="radio" name="nike-sneaker" value="Air Jordan"> homme
+            <input type="radio" name="gender" value="homme"> Homme
         </label>
         <label>
-            <input type="radio" name="nike-sneaker" value="Air Max"> femme
+            <input type="radio" name="gender" value="femme"> Femme
         </label>
 
-        <!-- Bouton de soumission -->
-        <button type="submit">Fini , voire les paire</button>
+        <!-- Bouton -->
+        <button type="submit">Fini, voir les paires</button>
     </div>
 
-    <!-- Load Flutter -->
+    <!-- Chargement Flutter -->
     <script src="flutter_bootstrap.js" defer></script>
 
+    <!-- Script pour cacher le loader -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const loaderContent = document.getElementById('loader-content');
-
-            // Detect Flutter's first frame
-            window.addEventListener('flutter-first-frame', function() {
-                loaderContent.classList.add('hidden'); // Apply the "hidden" class to fade out
+            window.addEventListener('flutter-first-frame', function () {
+                loaderContent.style.display = 'none';
             });
         });
     </script>

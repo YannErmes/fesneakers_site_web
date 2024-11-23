@@ -1,11 +1,11 @@
 {
-    "name": "flutter_cosmetique_site",
-    "short_name": "flutter_cosmetique_site",
+    "name": "fésneakers",
+    "short_name": "fésneakers",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#hexcode",
     "theme_color": "#hexcode",
-    "description": "A new Flutter project.",
+    "description": "Sneakers store",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
